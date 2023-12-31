@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+  </head>
+  <link rel="stylesheet" href="./style.css" />
+  <body>
+    <div class="container">
+    <img src="./me.png" alt="" />
+
+      <span class="text first-text">I'm a </span>
+      <span class="text sec-text"></span>
+    </div>
+    <div id="information">
+      <div id="introduction">
+        <center><h2>About Me</h2></center>
+        <div id="content">Hello! I'm Vedant Hundare, a passionate web developer on a continuous
+          journey of mastering the digital realm. With a foundation in web
+          development, I am currently delving deep into the intricacies of
+          JavaScript, aiming to solidify my position as a full stack web
+          developer. My dedication lies in crafting intuitive and user-centric web
+          solutions, always eager to embrace the ever-evolving world of
+          technology. Join me as I navigate through the dynamic landscape of web
+          development, always seeking knowledge and innovation.</div> 
+      </div><br><br><br>
+      <div id="introduction">
+        <center><h2>Education</h2></center>
+        <div id="content"><ul>
+          <li>B.Tech in Computer Engineering | K.J Somaiya Institute of Technology </li>
+          <li>XII (HSC) | Abhishek Vidhyalayam | Pune, Maharashtra</li>
+          <li>X (CBSE) | S.N.B.P International School | Pune, Maharashtra</li>
+        </ul>
+        </div>
+       <br><br><br>  
+      </div>
+      <div id="introduction">
+        <center><h2>Skills</h2></center>
+        <div id="content"><ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>React J.S</li>
+        </ul>
+        </div>
+         
+      </div>
+      <div id="introduction">
+        <center><h2>Experience</h2></center>
+        <div id="content"><ul>
+          <li>Smart India Hackathon 2023 (Participation)</li>
+          <li>Minor Project Completion (Contract Management System)</li>
+        </ul>
+        </div>
+         
+      </div><br><br><br>
+      <div id="introduction">
+        <center><h2>Projects</h2></center>
+        <div id="content"><ul>
+          <li>Weather Predictor     <a href="https://github.com/vedanthundare/PRODIGY_WD_05">link</a>  </li>
+          <li>Tic Tac Toe Game      <a href="https://github.com/vedanthundare/PRODIGY_WD_03">link</a>   </li>
+          <li>Stopwatch             <a href="https://github.com/vedanthundare/PRODIGY_WD_02">link</a>  </li>
+        </ul>
+        </div>
+         
+      </div><br><br><br>
+      <div id="introduction" >
+        <center><h2>Lets Connect!</h2></center><br>
+        <div id="content" class="icon"><a href="https://www.linkedin.com/in/vedant-hundare-47898a252/"><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="https://github.com/vedanthundare"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.instagram.com/_vedant_hundare_/"><ion-icon name="logo-instagram"></ion-icon></a>
+
+        </div>
+         
+      </div>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+      const text = document.querySelector(".sec-text");
+
+      const textLoad = () => {
+        setTimeout(() => {
+          text.textContent = "Student";
+        }, 0);
+        setTimeout(() => {
+          text.textContent = "Web Developer";
+        }, 4000);
+        setTimeout(() => {
+          text.textContent = "Prodigy Intern";
+        }, 8000);
+      };
+
+      textLoad();
+      setInterval(textLoad, 12000);
+    </script>
+  </body>
+</html>
